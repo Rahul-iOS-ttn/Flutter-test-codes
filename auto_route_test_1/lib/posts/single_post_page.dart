@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter_bottom_navigation_with_nested_routing_tutorial/data/app_data.dart';
 
 class SinglePostPage extends StatelessWidget {
   final int postId;
   const SinglePostPage({
     Key? key,
-    required this.postId,
+    @PathParam() required this.postId,
   }) : super(key: key);
 
   @override
