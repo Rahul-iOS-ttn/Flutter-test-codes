@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bottom_navigation_with_nested_routing_tutorial/data/app_data.dart';
-import 'package:flutter_bottom_navigation_with_nested_routing_tutorial/posts/posts_page.dart';
+
 import 'package:flutter_bottom_navigation_with_nested_routing_tutorial/routes/main_router.gr.dart';
-import 'package:flutter_bottom_navigation_with_nested_routing_tutorial/settings/settings_page.dart';
-import 'package:flutter_bottom_navigation_with_nested_routing_tutorial/users/users_page.dart';
 
 void main() => runApp(AppWidget());
 
