@@ -49,7 +49,10 @@ class MainRouter extends _i2.RootStackRouter {
           routeData: routeData, child: _i4.PostsPage(key: args.key));
     },
     SinglePostRoute.name: (routeData) {
-      final args = routeData.argsAs<SinglePostRouteArgs>();
+      final pathParams = routeData.inheritedPathParams;
+      final args = routeData.argsAs<SinglePostRouteArgs>(
+          orElse: () =>
+              SinglePostRouteArgs(postId: pathParams.getInt('postId')));
       return _i2.MaterialPageX<dynamic>(
           routeData: routeData,
           child: _i5.SinglePostPage(key: args.key, postId: args.postId));
@@ -154,7 +157,8 @@ class SinglePostRoute extends _i2.PageRouteInfo<SinglePostRouteArgs> {
   SinglePostRoute({_i8.Key? key, required int postId})
       : super(SinglePostRoute.name,
             path: ':postId',
-            args: SinglePostRouteArgs(key: key, postId: postId));
+            args: SinglePostRouteArgs(key: key, postId: postId),
+            rawPathParams: {'postId': postId});
 
   static const String name = 'SinglePostRoute';
 }

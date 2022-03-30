@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "846186081938",
+    "project_id": "deeplinks-d3c20",
+    "storage_bucket": "deeplinks-d3c20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846186081938:android:c440f4fbdad6df49ffc04b",
+        "android_client_info": {
+          "package_name": "com.example.auto_route_test_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846186081938-892554lfd4ac8ohmdudek6msg11rol14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxRHDOuQojls5h2Vn4PGHdG7kqzIaOSkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846186081938-892554lfd4ac8ohmdudek6msg11rol14.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
